@@ -1,3 +1,9 @@
 from pytube import YouTube
 
-YouTube('https://youtu.be/-sUXMzkh-jI').streams.first().download()
+yt = YouTube('https://youtu.be/-sUXMzkh-jI')
+
+s = yt.streams.all()
+for i in s:
+    print (i)
+
+yt.streams.first().download()
