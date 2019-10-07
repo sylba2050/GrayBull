@@ -1,3 +1,3 @@
 # GrayBull
 
-youtubeから動画をDLする
+youtubeから動画をDLするツール
