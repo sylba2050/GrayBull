@@ -4,6 +4,7 @@ yt = YouTube('https://youtu.be/-sUXMzkh-jI')
 
 s = yt.streams.all()
 for i in s:
-    print (i)
+    print(i)
 
-yt.streams.first().download()
+itag = int(input("ダウンロードしたい動画のタグ:"))
+yt.streams.get_by_itag(itag).download()
